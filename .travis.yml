@@ -17,4 +17,6 @@ services:
 install: true
 
 script:
+  - sudo apt update; sudo apt install mock -y
   - docker run -v $(pwd)/${PACKAGE}:/sources -v $(pwd):/output:Z -e "SRPM_ONLY=1" ${DOCKER_IMAGE}:${OS_TYPE}-${OS_VERSION}
+  - mock ${PACKAGE}*.rpm

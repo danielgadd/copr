@@ -13,8 +13,6 @@ The Kubernetes Package Manager
 %prep
 %autosetup -n %{name} -c
 
-%build
-
 %install
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/bin
