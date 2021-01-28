@@ -1,13 +1,15 @@
 sudo: required
-language: python
+language: minimal
 
 env:
   global:
     - DOCKER_IMAGE=alectolytic/rpmbuilder
     - COPR_REPOSITORY=repository
     - OS_ARCH=x86_64
+    - RPM_LINT=true
   matrix:
-    - OS_TYPE=fedora OS_DIST=fedora OS_VERSION=33
+    - OS_TYPE=fedora OS_DIST=fedora OS_VERSION=33 PACKAGE=helm
+    - OS_TYPE=fedora OS_DIST=fedora OS_VERSION=33 PACKAGE=kfctl
 
 services:
   - docker
@@ -15,5 +17,4 @@ services:
 install: true
 
 script:
-  - ls ${PWD}:/sources
-  - docker run -v ${PWD}:/sources -v ${PWD}:/output:Z -e "SRPM_ONLY=1" ${DOCKER_IMAGE}:${OS_TYPE}-${OS_VERSION}
+  - docker run -v $(pwd)/${PACKAGE}:/sources -v $(pwd):/output:Z -e "SRPM_ONLY=1" ${DOCKER_IMAGE}:${OS_TYPE}-${OS_VERSION}
