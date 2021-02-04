@@ -13,7 +13,6 @@ A tool to control and manage Kubeflow deployments
 %prep
 %autosetup -n %{name} -c
 
-
 %install
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/bin/
