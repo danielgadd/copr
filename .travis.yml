@@ -10,6 +10,7 @@ env:
     - OS_TYPE=fedora OS_DIST=fedora OS_VERSION=33 PACKAGE=helm
     - OS_TYPE=fedora OS_DIST=fedora OS_VERSION=33 PACKAGE=kfctl
     - OS_TYPE=fedora OS_DIST=fedora OS_VERSION=33 PACKAGE=k9s
+    - OS_TYPE=fedora OS_DIST=fedora OS_VERSION=33 PACKAGE=kind
 
 services:
   - docker
