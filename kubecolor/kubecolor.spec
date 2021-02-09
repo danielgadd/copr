@@ -10,8 +10,8 @@ Source0:        https://github.com/dty1er/kubecolor/releases/download/v%{version
 %description
 Colorize your kubectl output
 
-
-%autosetup -n %{name} -c -T
+%prep
+%autosetup -n %{name} -c
 
 %install
 rm -rf %{buildroot}
