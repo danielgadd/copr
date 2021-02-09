@@ -1,7 +1,7 @@
 Name:           kind
 Version:        0.10.0
 Release:        0%{?dist}
-Summary:        kind is a tool for running local Kubernetes clusters using Docker container "nodes"
+Summary:        kind is a tool for running Kubernetes clusters using Docker
 
 License:        ASL 2.0
 URL:            https://kind.sigs.k8s.io/
