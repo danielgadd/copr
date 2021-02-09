@@ -11,6 +11,7 @@ env:
     - OS_TYPE=fedora OS_DIST=fedora OS_VERSION=33 PACKAGE=kfctl
     - OS_TYPE=fedora OS_DIST=fedora OS_VERSION=33 PACKAGE=k9s
     - OS_TYPE=fedora OS_DIST=fedora OS_VERSION=33 PACKAGE=kind
+    - OS_TYPE=fedora OS_DIST=fedora OS_VERSION=33 PACKAGE=kubecolor
 
 services:
   - docker
