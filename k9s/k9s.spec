@@ -1,5 +1,5 @@
 Name:           k9s
-Version:        0.24.7
+Version:        0.24.9
 Release:        0%{?dist}
 Summary:        Kubernetes CLI To Manage Your Clusters In Style!
 License:        ASL 2.0
