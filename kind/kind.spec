@@ -1,5 +1,5 @@
 Name:           kind
-Version:        0.10.0
+Version:        0.11.1
 Release:        0%{?dist}
 Summary:        kind is a tool for running Kubernetes clusters using Docker
 
