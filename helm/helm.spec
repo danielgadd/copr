@@ -1,5 +1,5 @@
 Name:           helm
-Version:        3.5.1
+Version:        3.6.3
 Release:        0%{?dist}
 Summary:        The Kubernetes Package Manager
 
