@@ -5,7 +5,7 @@ Summary:        kind is a tool for running Kubernetes clusters using Docker
 
 License:        ASL 2.0
 URL:            https://kind.sigs.k8s.io/
-Source0:        https://github.com/kubernetes-sigs/kind/releases/download/v%{version}/kind-linux-amd64
+Source0:        https://kind.sigs.k8s.io/dl/v%{version}/kind-linux-amd64
 
 
 %description
